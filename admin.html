@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Admin Dashboard | IDAssist</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>IDAssist Admin</h2>
+      <nav>
+        <a href="admin.html" class="active">📄 GD Requests</a>
+        <a href="#">🎓 ID Reissues</a>
+        <a href="#">⚙ Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <h1>General Diary Submissions</h1>
+      </header>
+
+      <table>
+        <thead>
+          <tr>
+            <th>GD Number</th>
+            <th>Student</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#GD1023</td>
+            <td>Amit Sharma</td>
+            <td><span class="badge pending">Pending</span></td>
+            <td><button class="approve">Approve</button></td>
+          </tr>
+          <tr>
+            <td>#GD1024</td>
+            <td>Neha Verma</td>
+            <td><span class="badge approved">Approved</span></td>
+            <td><button class="approve">Reissue ID</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Police Dashboard | IDAssist</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar police">
+      <h2>Police Panel</h2>
+      <nav>
+        <a href="police.html" class="active">📋 Lost ID Reports</a>
+        <a href="#">🔍 Verify</a>
+        <a href="#">⚙ Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <h1>Lost ID Reports</h1>
+      </header>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Report ID</th>
+            <th>Student</th>
+            <th>Dept</th>
+            <th>GD Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#R204</td>
+            <td>Ravi Kumar</td>
+            <td>CSE</td>
+            <td><span class="badge pending">Verification</span></td>
+            <td><button class="approve">Issue GD</button></td>
+          </tr>
+          <tr>
+            <td>#R205</td>
+            <td>Anjali Singh</td>
+            <td>ECE</td>
+            <td><span class="badge approved">GD Issued</span></td>
+            <td><button class="approve">View GD</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>
